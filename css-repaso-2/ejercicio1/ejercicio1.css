@@ -1,0 +1,26 @@
+.cursos strong, .estudiar strong {
+    color: purple;
+}
+
+.ciclos {
+    width: 33.33%;
+    float: left;
+}
+
+.cursos {
+    width: 33.33%;
+    float: left;
+}
+
+.estudiar {
+    width: 33.33%;
+    float: left;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
