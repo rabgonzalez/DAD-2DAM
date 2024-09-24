@@ -69,6 +69,14 @@ const showPokedex = async () => {
                                     <div class="types">
                                         ${tipo1} ${tipo2}
                                     </div>
+                                    <div class="stats">STATS
+                                        <div class="height">
+                                            Height: ${pokemons[i].height}
+                                        </div>
+                                        <div class="weight">
+                                            Weight: ${pokemons[i].weight}
+                                        </div>
+                                    </div
                                 </div>`
     }
 }
