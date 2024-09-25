@@ -1,0 +1,28 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cover{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+}
+
+.c1{
+    background-image: url(../assets/images/cover1.jpg);
+    background-size: cover;
+}
+
+.c2{
+    background-image: url(../assets/images/cover2.jpg);
+    background-size: cover;
+}
+
+.c3{
+    background-image: url(../assets/images/cover3.jpg);
+    background-size: cover;
+}
