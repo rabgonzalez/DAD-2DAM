@@ -150,11 +150,12 @@ var Song = exports.default = /*#__PURE__*/_createClass(function Song(nombre, aud
   this.audio = new Audio(audio);
 });
 function play_song(song) {
-  console.log(song);
   song.nombre.onclick = function () {
     if (song.audio.paused) {
+      song.nombre.classList.add('playing');
       song.audio.play();
     } else {
+      song.nombre.classList.remove('playing');
       song.audio.pause();
     }
   };
@@ -234,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42903" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44225" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

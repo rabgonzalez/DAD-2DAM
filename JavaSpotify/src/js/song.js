@@ -8,11 +8,12 @@ export default class Song{
 }
 
 export function play_song(song) {
-    console.log(song);
     song.nombre.onclick = () => {
         if (song.audio.paused) {
+            song.nombre.classList.add('playing');
             song.audio.play();
         } else {
+            song.nombre.classList.remove('playing');
             song.audio.pause();
         }
     }

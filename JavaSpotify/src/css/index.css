@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    margin: 20px;
 }
 
 .cover{
@@ -10,6 +10,7 @@
     height: 200px;
     width: 200px;
     background-color: grey;
+    z-index: 1;
 }
 
 .c1{
@@ -25,4 +26,44 @@
 .c3{
     background-image: url(../assets/images/cover3.jpg);
     background-size: cover;
+}
+
+.vinyl{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 31%, rgba(128,127,127,1) 50%, rgba(0,0,0,1) 68%, rgba(0,0,0,1) 100%);
+    transition: transform 0.5s ease;
+}
+
+.detail{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #1db954;
+}
+
+.label{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #83D350;
+}
+
+.hole{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.playing .vinyl{
+    box-shadow: 0px 0px 10px rgb(2,0,36);
+    transform: translateX(130px);
+}
+
+.cover:hover{
+    transform: scale(1.1);
 }
