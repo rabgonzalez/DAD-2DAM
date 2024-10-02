@@ -17,6 +17,7 @@ async function getCampeones() {
 }
 
 function objectToArray() {
+    DOM.boton.style.display = 'none';
     getCampeones().then((datos) => {
         mostrarInformacion(datos);
     });
@@ -28,9 +29,9 @@ function mostrarInformacion(datos){
     result.forEach((campeon) => {
         DOM.campeones.innerHTML += `
         <div class="card">
-            <img src="http://ddragon.leagueoflegends.com/cdn/13.18.1/img/champion/${campeon.id}.png">
-            <p>${campeon.name}</p>
-            <p>${campeon.partype}</p>
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${campeon.id}_0.jpg">
+            <div class="nombre">${campeon.name}</div>
+            <div class="tipo">${campeon.partype}</div>
         </div>`;
     })
 }

@@ -1,0 +1,29 @@
+#campeones{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+img{
+    border-radius: 10px 10px 0 0;
+}
+
+.card{
+    margin: auto;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.card img:not(hover){
+    filter: grayscale(0.6) blur(2px);
+    transition: filter 0.3s ease;
+}
+
+.card img:hover{
+    filter: grayscale(0) blur(0) saturate(170%);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
