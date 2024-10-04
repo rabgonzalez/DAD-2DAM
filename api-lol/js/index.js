@@ -24,14 +24,25 @@ function objectToArray() {
 }
 
 function mostrarInformacion(datos){
+    let num = 0;
     const result = Object.values(datos);
     console.log(result);
     result.forEach((campeon) => {
         DOM.campeones.innerHTML += `
         <div class="card">
-            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${campeon.id}_0.jpg">
+            <div class="imagen">
+                <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${campeon.id}_${num}.jpg">
+            </div>
             <div class="nombre">${campeon.name}</div>
             <div class="tipo">${campeon.partype}</div>
         </div>`;
-    })
+    });
+
+    document.querySelectorAll('.imagen').forEach((image) => {
+        image.addEventListener('click', () => {
+            image.src = `"http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${idCampeon.id}_${num}.jpg"`;
+            num++;
+        });
+    });
+    return imagen;
 }
