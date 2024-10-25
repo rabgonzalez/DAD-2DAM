@@ -10,13 +10,20 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
   <body>
-    <nav
-      class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
-        <img src="./img/img/pdc-logo.png" width="20px" height="30px" alt="pdc logo">
+        <img
+          src="./img/img/pdc-logo.png"
+          width="20px"
+          height="30px"
+          alt="pdc logo"
+        />
         <span class="text-white ms-2">Canarias</span>
         <button
           class="navbar-toggler d-lg-none"
@@ -33,8 +40,7 @@
           <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="./index.html" aria-current="page"
-                >Portada
-                <span class="visually-hidden">(current)</span></a
+                >Portada <span class="visually-hidden">(current)</span></a
               >
             </li>
             <li class="nav-item">
@@ -42,7 +48,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./rutas.html">Rutas</a>
-            </li><li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contáctanos</a>
             </li>
             <li class="nav-item">
@@ -50,8 +57,6 @@
             </li>
             <li class="nav-item">
               <i class="bi bi-exclamation-circle-fill text-danger"></i>
-            </li>     
-              </div>
             </li>
           </ul>
           <form class="d-flex my-2 my-lg-0">
@@ -60,10 +65,7 @@
               type="text"
               placeholder="Search"
             />
-            <button
-              class="btn btn-outline-success my-2 my-sm-0"
-              type="submit"
-            >
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
               Search
             </button>
           </form>
@@ -76,55 +78,309 @@
     </nav>
 
     <main>
-      <div
-        class="container-fluid"
-      >
-      <div class="row">
-        <div class="col-2">
-          Falta info
-        </div>
-        <div class="col">
-          <div class="row">
-            <h3>Poblacion por Provincias</h3>
-            <div class="col-6">
-              <h4>Santa Cruz de Tenerife</h4>
-              <ul class="list-group list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  Content for list item
-                <span class="badge text-bg-primary">14</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                Active item
-                <span class="badge text-bg-primary">14</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                Active item
-                <span class="badge text-bg-primary">14</span>
-              </li><li class="list-group-item d-flex justify-content-between align-items-start">
-                Active item
-                <span class="badge text-bg-primary">14</span>
-              </li>
-              </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <nav class="nav d-lg-inline-block position-sticky">
+              <a class="nav-link" href="#poblacion">Población</a>
+              <a class="nav-link" href="#menu">Menú</a>
+              <a class="nav-link" href="#precios">Precios</a>
+            </nav>
+          </div>
+          <div class="col">
+            <div class="row">
+              <h3 id="poblacion">Poblacion por Provincias</h3>
+              <div class="col-12 col-lg-6">
+                <h4>Santa Cruz de Tenerife</h4>
+                <ul class="list-group">
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-start list-group-item-action"
+                  >
+                    Tenerife
+                    <span class="badge text-bg-primary">14</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-start list-group-item-action"
+                  >
+                    La Gomera
+                    <span class="badge text-bg-primary">14</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-start list-group-item-action"
+                  >
+                    El Hierro
+                    <span class="badge text-bg-primary">14</span>
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-start list-group-item-action"
+                  >
+                    La Palma
+                    <span class="badge text-bg-primary">14</span>
+                  </li>
+                </ul>
+              </div>
+			  <div class="col-12 col-lg-6">
+                <h3>Las Palmas</h3>
+                <div
+                  class="btn-group-vertical d-flex justify-content-between align-items-start list-group-item-action"
+                >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="vbtn-radio"
+                    id="vbtn-radio1"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="vbtn-radio1"
+                    >Gran Canaria
+                    <span class="badge text-bg-info text-white rounded-5"
+                      >14</span
+                    >
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="vbtn-radio"
+                    id="vbtn-radio2"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="vbtn-radio2"
+                    >Lanzarote
+                    <span class="badge text-bg-info text-white rounded-5"
+                      >14</span
+                    >
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="vbtn-radio"
+                    id="vbtn-radio3"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="vbtn-radio3"
+                    >Fuerteventura
+                    <span class="badge text-bg-info text-white rounded-5"
+                      >14</span
+                    >
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="vbtn-radio"
+                    id="vbtn-radio4"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-secondary" for="vbtn-radio4"
+                    >La Graciosa
+                    <span class="badge text-bg-info text-white rounded-5"
+                      >14</span
+                    >
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <h3>Las Palmas</h3>
-              <ul class="list-group list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    Content for list item
-                  <span class="badge text-bg-primary">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  Active item
-                  <span class="badge text-bg-primary">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  Active item
-                  <span class="badge text-bg-primary">14</span>
-                </li><li class="list-group-item d-flex justify-content-between align-items-start">
-                  Active item
-                  <span class="badge text-bg-primary">14</span>
-                </li>
-              </ul>
+
+            <div class="row">
+              <h2 id="menu">Menú</h2>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                  <h4>Primeros</h4>
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action text-secondary"
+                    >
+                      Ensalada Tropical
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action text-secondary"
+                    >
+                      Escaldón
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action text-secondary"
+                    >
+                      Queso Asado
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action text-secondary"
+                    >
+                      Croquetas
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                  <h4>Primeros</h4>
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary"
+                    >
+                      Carne Fiesta
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary"
+                    >
+                      Pollo Asado
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary"
+                    >
+                      Garbanzas
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-primary"
+                    >
+                      Potaje Berros
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                  <h4>Postres</h4>
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning"
+                    >
+                      Polvito Uruguayo
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning"
+                    >
+                      Principe Alberto
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning"
+                    >
+                      Frangoyo
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start list-group-item-action list-group-item-warning"
+                    >
+                      Quesillo
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" id="precios">
+              <div class="row">
+                <table class="table table-light">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Primeros</th>
+                      <th scope="col">Ingredientes</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Ensalada Tropical</td>
+                      <td>Lechuga, mango y papaya</td>
+                      <td>7€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Escaldon</td>
+                      <td>Gofio</td>
+                      <td>4€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Quesa Asado</td>
+                      <td>Leche de Cabra</td>
+                      <td>5€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Croquetas</td>
+                      <td>Pollo, cherne, queso, azul</td>
+                      <td>6€</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row">
+                <table class="table table-primary table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Primeros</th>
+                      <th scope="col">Ingredientes</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Ensalada Tropical</td>
+                      <td>Lechuga, mango y papaya</td>
+                      <td>7€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Escaldon</td>
+                      <td>Gofio</td>
+                      <td>4€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Quesa Asado</td>
+                      <td>Leche de Cabra</td>
+                      <td>5€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Croquetas</td>
+                      <td>Pollo, cherne, queso, azul</td>
+                      <td>6€</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row">
+                <table
+                  class="table table-hover table-warning table-striped table-bordered"
+                >
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Primeros</th>
+                      <th scope="col">Ingredientes</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Ensalada Tropical</td>
+                      <td>Lechuga, mango y papaya</td>
+                      <td>7€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Escaldon</td>
+                      <td>Gofio</td>
+                      <td>4€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Quesa Asado</td>
+                      <td>Leche de Cabra</td>
+                      <td>5€</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Croquetas</td>
+                      <td>Pollo, cherne, queso, azul</td>
+                      <td>6€</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
